@@ -3,7 +3,15 @@ import java.util.Scanner;
 public class Despacho {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        
+        // Datos del usuario
+        System.out.print("Ingrese su nombre: ");
+        String nombreUsuario = sc.nextLine();
 
+        System.out.print("Ingrese su edad: ");
+        int edadUsuario = sc.nextInt();
+        sc.nextLine(); // Limpia el buffer después de nextInt
+       
         // Datos del vehículo
         System.out.print("Ingrese la marca del vehículo: ");
         String marca = sc.nextLine();
@@ -41,6 +49,10 @@ public class Despacho {
         int totalFinal = totalCompra + costoDespacho;
 
         // Salida de datos
+        System.out.println("\n--- DATOS DEL USUARIO ---");
+        System.out.println("Nombre: " + nombreUsuario);
+        System.out.println("Edad: " + edadUsuario + " años");
+        
         System.out.println("\n--- DATOS DEL VEHÍCULO ---");
         System.out.println("Marca: " + marca);
         System.out.println("Modelo: " + modelo);
