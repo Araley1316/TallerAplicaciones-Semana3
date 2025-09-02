@@ -12,7 +12,9 @@ Una distribuidora ha implementado un servicio de despacho a domicilio para sus c
 
 ## Requerimientos funcionales
 
-- Permitir el ingreso de los siguientes datos del vehículo:
+- Permitir el ingreso de los siguientes datos:
+  - Nombre
+  - Edad
   - Marca
   - Modelo
   - Cilindrada
@@ -71,7 +73,8 @@ java Despacho
 
 ## Ejemplo de salida
 
-```bash
+Ingrese su Nombre: Romina Gómez
+Ingrese su edad: 42
 Ingrese la marca del vehículo: Toyota
 Ingrese el modelo del vehículo: Hilux
 Ingrese la cilindrada del vehículo: 2.8
@@ -80,13 +83,15 @@ Ingrese la capacidad de pasajeros: 5
 Ingrese el total de la compra: 47000
 Ingrese la distancia en kilómetros desde el centro a su casa: 10
 
+---DATOS DEL USUARIO---
+Nombre: Romina Gómez
+Edad: 42
 --- DATOS DEL VEHÍCULO ---
 Marca: Toyota
 Modelo: Hilux
 Cilindrada: 2.8
 Tipo de Combustible: Diésel
 Capacidad de Pasajeros: 5
-
 --- DATOS DE LA COMPRA ---
 Monto de la compra: $47000
 Distancia del despacho: 10 km
