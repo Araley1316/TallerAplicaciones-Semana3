@@ -87,8 +87,8 @@ Como docente/evaluador, quiero revisar el código y las capturas en el repositor
 
 **Reglas básicas de lectura/escritura para pruebas:**
 
-```json
-**{
+##json
+{
   "rules": {
     "users": {
       "$uid": {
@@ -97,7 +97,7 @@ Como docente/evaluador, quiero revisar el código y las capturas en el repositor
       }
     }
   }
-}**
+}
 
 ---
 ## Flujo de la aplicación
@@ -142,9 +142,9 @@ Como docente/evaluador, quiero revisar el código y las capturas en el repositor
 5. Verificar en Firebase Realtime Database la ruta:
 /users/{uid}/lastLocation
 
-├─ lat
-├─ lon
-└─ timestamp
+-lat
+-lon
+  timestamp
 
 **Tip de pruebas**: si `lastLocation` llega `null`, usar la ruta de actualización (el código contempla *fallback* con `requestLocationUpdates`).
 ---
