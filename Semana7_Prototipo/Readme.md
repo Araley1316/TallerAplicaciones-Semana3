@@ -25,14 +25,14 @@ Este repositorio contiene el prototipo no funcional desarrollado con **Pencil Pr
 
 ## 📸 Vistas del Prototipo
 
-| Pantalla                                         | Descripción                             |
-
-| ![Pantalla Login](prototipo/Pantalla_Login.png) | Inicio de sesión con credenciales o Gmail. |
-| ![Menú](prototipo/Pantalla_Menu.png) | Accesos principales de la aplicación. |
-| ![Catálogo](prototipo/Pantalla_Catálogo.png) | Selección de productos con casillas. |
-| ![Carrito](prototipo/Pantalla_Carrito.png) | Cálculo de despacho usando ubicación. |
-| ![Temperatura](prototipo/Pantalla_Temperatura.png) | Monitoreo de temperatura en tiempo real. |
-| ![Estado](prototipo/Pantalla_EstadoDespacho.png) | Seguimiento del estado del pedido. |
+| Pantalla | Descripción |
+|----------|-------------|
+| ![Login](pantallalogin.png) | Inicio de sesión con credenciales o Gmail. |
+| ![Menú](pantallamenu.png) | Accesos principales de la aplicación. |
+| ![Catálogo](pantallacatalogo.png) | Selección de productos con casillas. |
+| ![Carrito](pantallacarrito.png) | Cálculo de despacho usando ubicación. |
+| ![Temperatura](pantallatemperatura.png) | Monitoreo de temperatura en tiempo real. |
+| ![Estado](pantallaestadodespacho.png) | Seguimiento del estado del pedido. |
 
 ---
 
@@ -43,6 +43,14 @@ Este repositorio contiene el prototipo no funcional desarrollado con **Pencil Pr
 - 📍 **Google Maps API (referencia)** – Cálculo de distancia y ubicación.  
 
 ---
+---
+
+## 📌 Próximos pasos
+
+- Integrar este prototipo con la aplicación Android desarrollada en semanas anteriores.  
+- Implementar la funcionalidad real de monitoreo de temperatura mediante un sensor IoT conectado a Firebase.  
+- Automatizar el cálculo de distancia y costo de despacho usando la API de Google Maps.  
+- Desplegar la aplicación final para pruebas de usuario y validación del flujo completo.
 
 
 
