@@ -1,1 +1,97 @@
+# 🌡️ Proyecto de Monitoreo de Temperatura con Alarma – Parte A & B
+
+## 📌 Descripción general
+
+Este proyecto tiene como objetivo diseñar y desarrollar un sistema capaz de **monitorear la temperatura** y generar una **alarma sonora y de vibración** cuando los valores superan un rango permitido. El trabajo se divide en dos etapas complementarias:
+
+- **Parte A – Prototipo en Tinkercad:** Simulación inicial del sistema utilizando componentes electrónicos virtuales.
+- **Parte B – Aplicación Android con Firebase:** Implementación real del sistema en una app conectada a una base de datos en tiempo real.
+
+El resultado final es un sistema completo que une la electrónica con el desarrollo de software, aplicando conceptos de **IoT (Internet of Things)**, programación móvil, bases de datos en la nube y experiencia de usuario.
+
+---
+
+## ⚙️ Parte A – Prototipo en Tinkercad
+
+En esta primera fase se desarrolló un **prototipo funcional en la plataforma Tinkercad** para simular el comportamiento del sistema.  
+El objetivo fue **entender el flujo del proceso**, desde la lectura de temperatura hasta la activación de una señal de alerta.
+
+### 🛠️ Componentes utilizados:
+- Sensor de temperatura (simulado)
+- Placa Arduino Uno
+- LED indicador
+- Buzzer (alarma sonora)
+- Resistencia y cables de conexión
+
+### 🔄 Funcionamiento general:
+1. El sensor simulado mide la temperatura ambiente.
+2. Si el valor supera el rango definido, se activa el **LED rojo** y el **buzzer**.
+3. Si la temperatura está dentro del rango, el sistema permanece en estado normal.
+
+Esta etapa permitió **validar la lógica del sistema** antes de su implementación real, asegurando un correcto diseño de la solución.
+
+---
+
+## 📱 Parte B – Implementación en Android con Firebase
+
+En la segunda etapa, el sistema fue llevado a un entorno real mediante el desarrollo de una **aplicación móvil en Android Studio**, conectada a **Firebase Realtime Database** para gestionar los datos de temperatura en tiempo real.
+
+### 🚀 Funcionalidades principales:
+- **Lectura en tiempo real:** Obtiene el valor de la temperatura desde Firebase.
+- **Conversión automática:** Convierte la temperatura de °F a °C.
+- **Definición de rangos personalizados:** El usuario puede establecer un mínimo y máximo permitidos.
+- **Alarma inteligente:** Activa sonido y vibración solo cuando se supera el rango definido.
+- **Guardado de preferencias:** Los valores configurados se almacenan localmente con `SharedPreferences`.
+
+### 🔔 Lógica de la alarma:
+- Cuando la temperatura sale del rango permitido, se activa:
+  - **Sonido**: Generado con `ToneGenerator`.
+  - **Vibración**: Mediante el servicio `Vibrator` del sistema.
+- Se implementó un sistema **anti-repetición** para evitar activaciones constantes (una alarma cada 8 segundos).
+- Cuando la temperatura vuelve a estar dentro del rango, la alarma se desactiva automáticamente.
+
+---
+
+## 🧪 Pruebas realizadas
+
+Durante el proceso se llevaron a cabo distintas pruebas en el **emulador Android** para validar el correcto funcionamiento del sistema:
+
+- ✅ Recepción de datos en tiempo real desde Firebase.  
+- ✅ Conversión y visualización precisa de °F a °C.  
+- ✅ Alarma sonora y vibración activadas solo fuera de rango.  
+- ✅ Verificación en Logcat del funcionamiento del servicio de vibración.  
+- ✅ Persistencia de preferencias y valores configurados.  
+
+---
+
+## 📚 Aprendizajes obtenidos
+
+Este proyecto permitió integrar conocimientos adquiridos en diferentes áreas:
+
+- Diseño y simulación de sistemas con **Tinkercad**.
+- Conexión de aplicaciones móviles con **bases de datos en tiempo real** utilizando Firebase.
+- Implementación de funciones de hardware como **vibración y sonido** desde Android.
+- Manejo de **preferencias locales** para mejorar la experiencia del usuario.
+- Interpretación de registros en **Logcat** para validar comportamientos internos.
+- Comprensión del enfoque IoT al conectar dispositivos físicos con aplicaciones digitales.
+
+---
+
+## 🏁 Conclusión
+
+El proyecto representa una experiencia completa en el desarrollo de soluciones tecnológicas, desde la simulación electrónica hasta la implementación de una aplicación real. La **Parte A** permitió diseñar la lógica del sistema en un entorno seguro y experimental, mientras que la **Parte B** llevó ese diseño a la práctica con una aplicación capaz de procesar datos en tiempo real, reaccionar ante condiciones fuera de rango y alertar al usuario con señales visuales, sonoras y táctiles.
+
+Este trabajo no solo cumple con los objetivos propuestos, sino que también refuerza las competencias en programación móvil, IoT y trabajo con servicios en la nube, demostrando cómo la integración entre hardware y software puede generar soluciones efectivas y aplicables a contextos reales.
+
+---
+
+## 🧰 Tecnologías utilizadas
+
+- 🔧 [Tinkercad](https://www.tinkercad.com/) – Simulación del prototipo electrónico  
+- ☁️ [Firebase Realtime Database](https://firebase.google.com/) – Base de datos en tiempo real  
+- 💻 [Android Studio](https://developer.android.com/studio) – Desarrollo de la app  
+- 📱 Kotlin – Lenguaje de programación  
+- 🛠️ Material 3 Compose – Interfaz de usuario moderna  
+
+---
 
